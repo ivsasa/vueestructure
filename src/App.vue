@@ -1,10 +1,9 @@
 <template>
   <!-- Menu principal -->
   <the-menu></the-menu>
-  <router-view />
   <!-- Contenido principal -->
   <div>
-
+    <router-view />
   </div>
   <!-- Footer -->
   <the-footer></the-footer>
@@ -14,24 +13,8 @@
 //Dependencias
 import TheMenu from "./components/TheMenu";
 import TheFooter from "./components/TheFooter.vue";
+//Importacion de ficheros scss con nodejs
+require("@/assets/scss/_reset.scss");
+require("@/assets/scss/estructure.scss");
 
 </script>
-
-<style lang="scss">
-
-body{
-  margin: 0;
-  padding: 0;
-}
-
-
-#app {
-  margin: 0;
-  padding:0 ;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-
-</style>

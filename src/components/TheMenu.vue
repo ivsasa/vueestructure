@@ -21,7 +21,7 @@
             padding: .5em;
             color: rgb(255, 254, 254);
             &:hover{
-                    background-color: #adb303;
+                    background-color: #03b32c;
                     border-color: #217f0a;
                 }
         }
